@@ -1,0 +1,243 @@
+@import "common";
+
+@baseFont: 64;
+
+body {
+    min-width: 320px;
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    font-size: (14rem / @baseFont);
+    height: 2000px;
+}
+
+// app
+
+.app {
+    height: (45rem / @baseFont);
+}
+
+.app ul {
+    display: flex;
+}
+
+.app ul li {
+    height: (45rem / @baseFont);
+    line-height: (45rem / @baseFont);
+    background-color: #001C4F;
+    text-align: center;
+    color: #fff;
+}
+
+.app ul li:nth-child(1) {
+    width: (45rem / @baseFont);
+}
+
+.app ul li:nth-child(1) img {
+    width: (14rem / @baseFont);
+}
+
+.app ul li:nth-child(2) {
+    width: (45rem / @baseFont);
+}
+
+.app ul li:nth-child(2) img {
+    width: (35rem / @baseFont);
+}
+
+.app ul li:nth-child(3) {
+    flex: 1;
+}
+
+.app ul li:nth-child(3) span{
+    font-size: (18rem / @baseFont);
+}
+
+.app ul li:nth-child(4) {
+    width: (100rem / @baseFont);
+    background-color: #C5E6F9;
+    color: #333333;
+}
+
+// menu bar
+
+.menu-wrap {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    height: (44rem / @baseFont);
+    min-width: 320px;
+}
+
+.menu-btn {
+    width: (35rem / @baseFont);
+    height: (44rem / @baseFont);
+}
+
+.menu-btn::before {
+    content: "";
+    display: block;
+    top:0;
+    width: (20rem / @baseFont);
+    height: (18rem / @baseFont);
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: (20rem / @baseFont) (18rem / @baseFont);
+    margin: (14rem / @baseFont) 0 0 (10rem / @baseFont);
+}
+
+.menu-login {
+    width: (55rem / @baseFont);
+    color: #fff;
+    line-height: (44rem / @baseFont);
+    text-align: center;
+}
+
+.search {
+    flex: 1;
+    position: relative;
+    height: (30rem / @baseFont);
+    background-color: #fff;
+    border-radius: (15rem / @baseFont);
+}
+
+.ebay-icon {
+    width: (37rem / @baseFont);
+    height: (15rem / @baseFont);
+    position: absolute;
+    top: (8rem / @baseFont);
+    left: (13rem / @baseFont);
+    background: url(../images/ebay.svg) no-repeat;
+    background-size: (37rem / @baseFont) (15rem / @baseFont);
+}
+
+.ebay-icon::after {
+    content: "";
+    position: absolute;
+    right: (-2rem / @baseFont);
+    top: 0;
+    display: block;
+    width: 1px;
+    height: (15rem / @baseFont);
+    background-color: #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    top: (8rem / @baseFont);
+    left: (52rem / @baseFont);
+    width: (18rem / @baseFont);
+    height: (15rem / @baseFont);
+    background: url(../images/jd-sprites.png) no-repeat (-81rem / @baseFont) 0;
+    background-size: (200rem / @baseFont) auto;
+}
+
+// banner
+
+.slider img {
+    width: 100%;
+}
+
+// main deal
+
+.brand {
+    display: flex;
+}
+ 
+.brand div {
+    flex: 1;
+}
+ 
+.brand div img {
+    width: 100%;
+}
+
+// navigation(Categories)
+
+nav {
+    padding: (5rem / @baseFont) 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    width: 20%;
+    height: (100rem / @baseFont);
+    text-align: center;
+}
+
+nav a img {
+    width: (60rem / @baseFont);
+    margin: (10rem / @baseFont) 0;
+}
+
+nav a span {
+    display: block;
+    margin: 0 (5rem / @baseFont);
+    line-height: 1.0;
+    overflow: hidden;
+}
+
+// news
+
+.news {
+    display: flex;
+}
+
+.news a {
+    box-sizing: border-box;
+}
+
+.news a:nth-child(1) {
+    flex: 50%;
+}
+
+.news a:nth-child(n+2) {
+    flex: 25%;
+}
+
+.news img {
+    width: 100%;
+}
+
+// sub deal
+
+.deal-hd {
+    padding-left: (10rem / @baseFont);
+}
+
+.deal-hd h2 {
+    font-size: (14rem / @baseFont);
+    font-weight: normal;
+}
+
+.deal-bd {
+    display: flex;
+    justify-content: space-between;
+    height: (150rem / @baseFont);
+}
+
+.deal-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: (2rem / @baseFont);
+}
+
+.deal-items a {
+    flex: 1;
+    background-color: pink;
+}
+
+.deal-items a:nth-child(1) {
+    margin-bottom: (2rem / @baseFont);
+}
+
+.deal-items:nth-child(2) a {
+    margin: 0;
+}
+

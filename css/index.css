@@ -1,0 +1,270 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  -webkit-appearance: none;
+}
+img,
+a {
+  -webkit-touch-callout: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+div {
+  /* css3 box model */
+  box-sizing: border-box;
+}
+html {
+  font-size: 64px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 37.5px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 38.4px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 41.4px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 42.4px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 54px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: -apple-system, Helvetica, sans-serif;
+  color: #666;
+  font-size: 0.21875rem;
+  height: 2000px;
+}
+.app {
+  height: 0.703125rem;
+}
+.app ul {
+  display: flex;
+}
+.app ul li {
+  height: 0.703125rem;
+  line-height: 0.703125rem;
+  background-color: #001C4F;
+  text-align: center;
+  color: #fff;
+}
+.app ul li:nth-child(1) {
+  width: 0.703125rem;
+}
+.app ul li:nth-child(1) img {
+  width: 0.21875rem;
+}
+.app ul li:nth-child(2) {
+  width: 0.703125rem;
+}
+.app ul li:nth-child(2) img {
+  width: 0.546875rem;
+}
+.app ul li:nth-child(3) {
+  flex: 1;
+}
+.app ul li:nth-child(3) span {
+  font-size: 0.28125rem;
+}
+.app ul li:nth-child(4) {
+  width: 1.5625rem;
+  background-color: #C5E6F9;
+  color: #333333;
+}
+.menu-wrap {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  height: 0.6875rem;
+  min-width: 320px;
+}
+.menu-btn {
+  width: 0.546875rem;
+  height: 0.6875rem;
+}
+.menu-btn::before {
+  content: "";
+  display: block;
+  top: 0;
+  width: 0.3125rem;
+  height: 0.28125rem;
+  background: url(../images/s-btn.png) no-repeat;
+  background-size: 0.3125rem 0.28125rem;
+  margin: 0.21875rem 0 0 0.15625rem;
+}
+.menu-login {
+  width: 0.859375rem;
+  color: #fff;
+  line-height: 0.6875rem;
+  text-align: center;
+}
+.search {
+  flex: 1;
+  position: relative;
+  height: 0.46875rem;
+  background-color: #fff;
+  border-radius: 0.234375rem;
+}
+.ebay-icon {
+  width: 0.578125rem;
+  height: 0.234375rem;
+  position: absolute;
+  top: 0.125rem;
+  left: 0.203125rem;
+  background: url(../images/ebay.svg) no-repeat;
+  background-size: 0.578125rem 0.234375rem;
+}
+.ebay-icon::after {
+  content: "";
+  position: absolute;
+  right: -0.03125rem;
+  top: 0;
+  display: block;
+  width: 1px;
+  height: 0.234375rem;
+  background-color: #ccc;
+}
+.search-icon {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.8125rem;
+  width: 0.28125rem;
+  height: 0.234375rem;
+  background: url(../images/jd-sprites.png) no-repeat -1.265625rem 0;
+  background-size: 3.125rem auto;
+}
+.slider img {
+  width: 100%;
+}
+.brand {
+  display: flex;
+}
+.brand div {
+  flex: 1;
+}
+.brand div img {
+  width: 100%;
+}
+nav {
+  padding: 0.078125rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav a {
+  width: 20%;
+  height: 1.5625rem;
+  text-align: center;
+}
+nav a img {
+  width: 0.9375rem;
+  margin: 0.15625rem 0;
+}
+nav a span {
+  display: block;
+  margin: 0 0.078125rem;
+  line-height: 1;
+  overflow: hidden;
+}
+.news {
+  display: flex;
+}
+.news a {
+  box-sizing: border-box;
+}
+.news a:nth-child(1) {
+  flex: 50%;
+}
+.news a:nth-child(n+2) {
+  flex: 25%;
+}
+.news img {
+  width: 100%;
+}
+.deal-hd {
+  padding-left: 0.15625rem;
+}
+.deal-hd h2 {
+  font-size: 0.21875rem;
+  font-weight: normal;
+}
+.deal-bd {
+  display: flex;
+  justify-content: space-between;
+  height: 2.34375rem;
+}
+.deal-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 0.03125rem;
+}
+.deal-items a {
+  flex: 1;
+  background-color: pink;
+}
+.deal-items a:nth-child(1) {
+  margin-bottom: 0.03125rem;
+}
+.deal-items:nth-child(2) a {
+  margin: 0;
+}
